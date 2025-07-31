@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>For Studentds</title>
+  </head>
+  
+<body>
+<!--color change-->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      transition: background-color 0.5s ease;
+    }
+
+    .color-button {
+      position: fixed;
+      top: 5px;
+      right: 10px;
+      background-color: #ffffff;
+      border: 2px solid #333;
+      padding: 5px 5px;
+      cursor: pointer;
+      border-radius: 10px;
+      font-weight: bold;
+      z-index: 1000;
+    }
+
+    .color-button:hover {
+      background-color: #eee;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="color-button" onclick="changeBackground()">Color</button>
+
+<br>
+
+  <script>
+    const colors = ["#ffadad", "#caffbf", "#a0c4ff", "#bdb2ff", "#ffd6a5", "#fdffb6", "#9bf6ff"];
+    let index = 0;
+
+    function changeBackground() {
+      document.body.style.backgroundColor = colors[index];
+      index = (index + 1) % colors.length;
+    }
+  </script>
+  <!--main-->
+  <header style="background: radial-gradient(rgb(255, 0, 0), rgb(0, 0, 255)); color: white; border-radius:15px;text-align:center;font-size:30px;font-weight:bold">For Studentds</header>
+  <br>
+  <style>
+{
+   font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    /* Hamburger icon */
+    .menu-icon {
+      font-size: 15px;
+      cursor: pointer;
+      padding: 5px;
+      background-color: black;
+      color: white;
+    }
+
+    /* Hidden menu box initially */
+    .menu-box {
+      display: none;
+      background-color:#f1f1f1;
+      padding: 20px;
+      text-align: left;
+    }
+
+    .menu-box a {
+      display: block;
+      padding: 10px;
+      margin: 10px 0;
+      background-color: black;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .menu-box a:hover {
+      background-color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hamburger Icon -->
+   <div class="menu-icon" onclick="toggleMenu()">☰ Menu</div> 
+
+  <!-- Hidden Menu Box -->
+  <div class="menu-box" id="menuBox">
+    <a href="index.html">Home</a>
+    <a href="Scholarship.html"> Scholarship</a>
+    <a href="college.html">College exam</a>
+    <a href="Government.html">Government jobs</a>
+    <a href="private.html">Private jobs</a>
+   
+  </div>
+
+  <script>
+    function toggleMenu() {
+      var box = document.getElementById("menuBox");
+      if (box.style.display === "block") {
+        box.style.display = "none";
+      } else {
+        box.style.display = "block";
+      }
+    }
+  </script>
+  <h2 style="background-color:#a2b1dfc3;border-radius:15px;margin-right:75%; text-indent:15px;"> About</h2>
+  <h3>Scholarship:</h3>
+  <br>
+  <h3>Collage Exam:</h3>
+  <br>
+  <h3>Goverments jobs:</h3>
+  <br>
+  <h3>Private jobs:</h3>
+  <br>
+  
+
+<footer style="background-color: black; color: white; text-align: center;padding:5px;">
+  © 2025 For Studentds.com – All Rights Reserved</footer>
+<footer style="font-size:10px;background-color:black;color:white;text-indent:5px;text-align:center;">✉️Email: Vanshs2666@gmail.com
+</footer>
+  <footer style="font-size:10px;background-color:black;color:white;text-indent:5px;text-align:center;padding:5px;">Whatsapp No. 8193024329</footer>
+</body>
+</html>
